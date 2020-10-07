@@ -6,7 +6,7 @@
 ## Overview of Project
 ## Purpose
 
-For this project I am creating an **interactive map** that shows the latest **earthquake activity around the world**. Maps allow us to explore, understand and make decisions about our world. Providing data-driven storytelling on disasters around the world and building insightful data visualization with interactive features is a valuable addition to the knowledge and awareness of the planet Earth events. 
+For this project I am creating an **interactive map** that shows the latest **earthquake activity around the world**. Maps allow us to explore, understand and make decisions about our world. Providing data-driven storytelling on disasters around the world and building insightful data visualization with interactive features is a valuable addition to the knowledge and awareness of the planet Earth. 
 
 **The map of earthquakes around the world contains:**
 
