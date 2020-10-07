@@ -1,7 +1,7 @@
 // Add console.log to check to see if our code is working.
 console.log("working");
 
-// We create the tile layer that will be the background of our map.
+// 1st tile layer (background of our map).
 let streets = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
   id: 'mapbox/streets-v11',
@@ -9,7 +9,7 @@ let streets = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{
 	accessToken: API_KEY
 });
 
-// We create the second tile layer that will be the background of our map.
+// 2nd tile layer (background of our map).
 let satelliteStreets = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
   id: 'mapbox/satellite-streets-v11',
@@ -17,7 +17,7 @@ let satelliteStreets = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/
 	accessToken: API_KEY
 });
 
-// We create the second tile layer that will be the background of our map.
+// 3rd tile layer (background of our map).
 let dark = L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
   id: 'mapbox/dark-v10',
@@ -76,7 +76,6 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
   }
 
   // This function determines the color of the marker based on the magnitude of the earthquake.
-  //try to refactor this with ? = ternary function.
   function getColor(magnitude) {
     if (magnitude > 5) {
       return "#ea2c2c";
@@ -212,16 +211,16 @@ legend.onAdd = function() {
     return div;
   };
 
-  // Finally, we our legend to the map.
+  // Add legend to the map.
   legend.addTo(map);
 
-// Create a style for the lines.
+//Style for the lines.
 let myStyle = {
   color: "orange",
   weight: 3
 }
 
-  // 3. Use d3.json to make a call to get our Tectonic Plate geoJSON data.
+  // d3.json to make a call to get our Tectonic Plate geoJSON data.
 let tecPlates = 'https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json'
 
   d3.json(tecPlates).then(function(dataTP) {
