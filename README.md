@@ -29,7 +29,7 @@ The map of earthquakes around the world contains:
 -	**A legend** with the context for the map.
 
 <p align="center">
-<img src="Graphics/Giffy.PNG" width="60%" height="60%">
+<img src="Graphics/Giffy.gif" width="60%" height="60%">
 </p>
 
 <p align="center">
