@@ -1,7 +1,7 @@
 # Mapping_Earthquakes
 *An interactive earthquake maps with JavaScript and Leaflet*
 
-***Note:*** Final documents are stored in [Earthquake_Challenge](Earthquake_Challenge) directory. Please find the explanation of the files below. Code needs an API Key from Matbox in order to run. The API key is not included for safety reasons. Other files are included because of the detailed procedure of working with Mapbox, Leaflet and GitHub branching.  
+***Note:*** Final documents are stored in [Earthquake_Challenge](Earthquake_Challenge) directory. Please find the explanation of the files below. Code needs an API Key from Matbox in order to run. The API key is not included for safety reasons. Other files (i.e. Earthquakes_past7days, Simple_Map and json files) are included because of the detailed procedure of working with Mapbox, Leaflet and GitHub branching.  
 
 ## Overview of Project
 ## Purpose
