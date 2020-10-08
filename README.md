@@ -17,7 +17,7 @@ For this project I am creating an **interactive map** that shows the latest **ea
     - Street view.
     - Satellite view. 
     - Dark view.
--	**A popup marker** with information about the location and the magnitude of the location
+-	**A popup marker** with information about the location and the magnitude of the earthquake.
 -	**The diameter** and **the color** of a marker reflect the strength of the earthquake (darker color with larger diameter represent earthquakes with a higher magnitude).
 -	**A legend** with the context for the map.
 
